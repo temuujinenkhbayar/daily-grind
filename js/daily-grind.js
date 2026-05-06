@@ -47,7 +47,11 @@ console.log(coffee);
 
 alert(coffeeTemplate(coffee));
 
+//Adds coffee to page
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
+
+
+document.querySelector("html").style.backgroundColor = coffee.color;
 
 
 function coffeeTemplate(coffee){
