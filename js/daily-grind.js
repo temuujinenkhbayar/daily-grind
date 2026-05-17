@@ -24,6 +24,26 @@ switch(myDay){
 
  	case 0:
     	today =  "Sunday";
+        coffee = {
+            name:"Pumpkin Spice Latte",
+            pic:"pumpkin-spice-latte.jpg",
+            alt:"A pic of a warming pumpkin spice latte.",
+            color:"orange",
+            day:"Sunday",
+            desc:`Sunday morning pumpkin spice latte!`,
+        };
+ 	break;
+
+    case 1:
+   	    today = "Monday";
+        coffee = {
+            name:"Mocha",
+            pic:"mocha.jpg",
+            alt:"A pic of a mocha.",
+            color:"red",
+            day:"Monday",
+            desc:`We love mocha!`,
+        };
  	break;
 
  	case 2:
@@ -35,6 +55,56 @@ switch(myDay){
             color:"pink",
             day:"Tuesday",
             desc:`I like me some Bubble Tea!`,
+        };
+ 	break;
+
+    case 3:
+   	    today = "Wednesday";
+        coffee = {
+            name:"Caramel Latte",
+            pic:"caramel-latte.jpg",
+            alt:"A pic of a sweet caramel latte.",
+            color:"yellow",
+            day:"Wednesday",
+            desc:`Caramel latte wanted!`,
+        };
+ 	break;
+
+    case 4:
+   	    today = "Thursday";
+        coffee = {
+            name:"Cold Brew",
+            pic:"cold-brew.jpg",
+            alt:"A pic of a cold brew.",
+            color:"blue",
+            day:"Thursday",
+            desc:`I want some cold brew!`,
+        };
+ 	break;
+
+
+
+    case 5:
+   	    today = "Friday";
+        coffee = {
+            name:"Drip",
+            pic:"drip.jpg",
+            alt:"A pic of drip coffee.",
+            color:"brown",
+            day:"Friday",
+            desc:`I need a constant drip!`,
+        };
+ 	break;
+
+    case 6:
+   	    today = "Saturday";
+        coffee = {
+            name:"Frappaccino",
+            pic:"frappaccino.jpg",
+            alt:"A pic of a foamy frappucino.",
+            color:"green",
+            day:"Saturday",
+            desc:`Always refreshing frappucino!`,
         };
  	break;
 
@@ -50,7 +120,7 @@ alert(coffeeTemplate(coffee));
 //Adds coffee to page
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
-
+//Changes the background color depending on the coffee
 document.querySelector("html").style.backgroundColor = coffee.color;
 
 
