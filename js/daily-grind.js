@@ -135,13 +135,19 @@ switch(myDay){
 
 console.log(coffee);
 
-alert(coffeeTemplate(coffee));
+//alert(coffeeTemplate(coffee));
 
 //Adds coffee to page
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
 //Changes the background color depending on the coffee
 document.querySelector("html").style.backgroundColor = coffee.color;
+
+//change strong tags in template to our color
+document.querySelectorAll("#coffee-cup strong").forEach(el => {
+    el.style.color = coffee.color;
+});
+
 
 
 function coffeeTemplate(coffee){
